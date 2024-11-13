@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Button } from "./ui/button";
 import Link from "next/link";
-import { InfinityIcon } from "lucide-react";
+import { Ghost, InfinityIcon } from "lucide-react";
 
 type Props = {
   activeCourse: { imageSrc: string; title: string };
@@ -19,7 +19,7 @@ export const UserProgress = ({
   return (
     <div className="flex items-center justify-between gap-x-2 w-full">
       <Link href="/courses">
-        <Button>
+        <Button variant="ghost">
           <Image
             src={activeCourse.imageSrc}
             alt={activeCourse.title}
