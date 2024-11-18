@@ -6,8 +6,7 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { useTransition } from "react";
 import { toast } from "sonner";
-
-export const POINTS_TO_REFILL = 10;
+import { POINTS_TO_REFILL } from "@/constants";
 
 type Props = {
   hearts: number;
@@ -70,8 +69,8 @@ export const Items = ({ hearts, points, hasActiveSubscription }: Props) => {
             Unlimited hearts
           </p>
         </div>
-        <Button disabled={pending || hasActiveSubscription} onClick={onUpgrade}>
-          {hasActiveSubscription ? "active" : "upgrade"}
+        <Button disabled={pending} onClick={onUpgrade}>
+          {hasActiveSubscription ? "settings" : "upgrade"}
         </Button>
       </div>
     </ul>
