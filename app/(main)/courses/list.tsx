@@ -9,7 +9,7 @@ import { toast } from "sonner";
 
 type Props = {
   courses: (typeof courses.$inferSelect)[];
-  activeCourseId: typeof userProgress.$inferSelect.activeCourseId;
+  activeCourseId: typeof userProgress.$inferSelect.activeCourseId ;
 };
 
 export const List = ({ courses, activeCourseId }: Props) => {
