@@ -4,7 +4,7 @@ import { LessonButton } from "./lesson-button";
 
 type Props = {
   id: number;
-  order: number;
+  order: number | undefined;
   title: string;
   description: string;
   lessons: (typeof lessons.$inferSelect & {
@@ -19,8 +19,6 @@ type Props = {
 };
 
 export const Unit = ({
-  id,
-  order,
   title,
   description,
   lessons,

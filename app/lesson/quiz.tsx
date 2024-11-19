@@ -50,11 +50,12 @@ export const Quiz = ({
 
   const router = useRouter();
   const [finishAudio] = useAudio({ src: "/finish.mp3", autoPlay: true });
-  const [correctAudio, _c, correctControl] = useAudio({ src: "/correct.wav" });
-  const [incorrectAudio, _i, incorrectControl] = useAudio({
+  const [correctAudio, , correctControl] = useAudio({ src: "/correct.wav" });
+  const [incorrectAudio, , incorrectControl] = useAudio({
     src: "/incorrect.wav",
   });
 
+  
   const [lessonId] = useState(initialLessonId);
   const [pending, startTransition] = useTransition();
   const [hearts, setHearts] = useState(initialHearts);

@@ -1,27 +1,34 @@
 {
   "compilerOptions": {
-    "target": "ES2017",
+    "target": "ESNext", // Updated for modern JavaScript features
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
     "noEmit": true,
     "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "bundler",
+    "module": "ESNext", // Consistent with target
+    "moduleResolution": "node", // Changed from "bundler" to "node" for compatibility
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
+    "baseUrl": ".", // Enables absolute imports based on project root
+    "paths": {
+      "@/*": ["./*"] // Alias configuration for cleaner imports
+    },
+    "types": ["next", "node"], // Explicitly include Next.js and Node.js types
     "plugins": [
       {
-        "name": "next"
+        "name": "next" // Ensures Next.js-specific TypeScript features
       }
-    ],
-    "paths": {
-      "@/*": ["./*"]
-    }
+    ]
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"]
+  "include": [
+    "next-env.d.ts", // Ensures Next.js types are included
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts" // Includes generated types
+  ],
+  "exclude": ["node_modules"] // Excludes dependencies from compilation
 }

@@ -25,7 +25,7 @@ export const upsertChallengeProgress = async (challengeId: number) => {
     where: and(eq(challenges.id, challengeId)),
   });
 
-  const lessonId = challenge.lessonId;
+  const lessonId = challenge?.lessonId;
 
   const existingChallengeProgress = await db.query.challengeProgress.findFirst({
     where: and(
