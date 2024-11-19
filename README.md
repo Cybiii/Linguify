@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Linguify
 
-## Getting Started
+[Click here to Linguify!](https://linguify-sigma.vercel.app/)
 
-First, run the development server:
+**Linguify** is a comprehensive full-stack language learning platform.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 🏆 Leaderboards
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Competitive Learning:** Track your progress and see how you rank against other learners.
+- **Top Performers:** View the top ten users based on points earned.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 🎯 Quests
 
-## Learn More
+- **Daily Challenges:** Engage in quests to earn XP and rewards.
+- **Progress Tracking:** View all quests and monitor your completion status.
 
-To learn more about Next.js, take a look at the following resources:
+### 🛒 Shop
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **In-App Purchases:** Spend your earned points and hearts on various in-app items.
+- **Upgrade to Pro:** Unlock unlimited hearts and access exclusive features by upgrading to the Pro plan.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 🎓 Courses & Lessons
 
-## Deploy on Vercel
+- **Diverse Language Support:** Learn multiple languages.
+- **Structured Curriculum:** Organized courses with units, lessons, and challenges to facilitate effective learning.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 💎 Points & Hearts
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Earn XP:** Gain points by completing challenges.
+- **Hearts System:** Use hearts as a secondary currency for special features and upgrades.
+
+### 📈 Progress Tracking
+
+- **User Progress:** Monitor your learning journey with detailed progress metrics.
+- **Course Progress:** Identify your active lessons and track completion rates.
+
+### 🛡️ Secure Authentication & Payments
+
+- **Clerk Integration:** Secure and reliable user authentication.
+- **Stripe Integration:** Safe and seamless payment processing for subscriptions and purchases.
+
+## Technologies Used
+
+- **Frontend:**
+
+  - [Next.js](https://nextjs.org/) - React framework for server-side rendering and static site generation.
+  - [React](https://reactjs.org/) - JavaScript library for building user interfaces.
+  - [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework for styling.
+
+- **Backend:**
+
+  - [Drizzle ORM](https://drizzle.team/) - TypeScript ORM for interacting with the Neon PostgreSQL database.
+  - [Neon PostgreSQL](https://neon.tech/) - Serverless PostgreSQL database for scalable data storage.
+
+- **Authentication & Payments:**
+
+  - [Clerk](https://clerk.dev/) - User authentication and management.
+  - [Stripe](https://stripe.com/) - Secure payment processing.
+
+- **Language Support:**
+  - TypeScript - Enhanced JavaScript with static typing.
