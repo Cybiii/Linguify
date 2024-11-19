@@ -2,7 +2,7 @@
 
 [Click here to Linguify!](https://linguify-sigma.vercel.app/)
 
-**Linguify** is a comprehensive full-stack language learning platform.
+**Linguify** is a comprehensive full-stack language learning platform using Next.js and React, integrating backend services with Drizzle and secure payment processing through Stripe.
 
 ## Features
 
